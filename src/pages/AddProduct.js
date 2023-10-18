@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './AddProduct.css';
 
 function AddProduct() {
   const [productData, setProductData] = useState({
@@ -25,7 +26,7 @@ function AddProduct() {
       <h2>Add Product</h2>
       <form onSubmit={handleSubmit}>
         <div>
-          <label>Name:</label>
+          <label className="label">Name:</label>
           <input
             type="text"
             name="name"
@@ -34,7 +35,7 @@ function AddProduct() {
           />
         </div>
         <div>
-          <label>Description:</label>
+          <label className="label">Description:</label>
           <input
             type="text"
             name="description"
@@ -43,7 +44,7 @@ function AddProduct() {
           />
         </div>
         <div>
-          <label>Categories:</label>
+          <label className="label">Categories:</label>
           <input
             type="text"
             name="categories"
@@ -52,7 +53,7 @@ function AddProduct() {
           />
         </div>
         <div>
-          <label>Quantity:</label>
+          <label className="label">Quantity:</label>
           <input
             type="text"
             name="quantity"
@@ -61,7 +62,7 @@ function AddProduct() {
           />
         </div>
         <div>
-          <label>Price:</label>
+          <label className="label">Price:</label>
           <input
             type="text"
             name="price"

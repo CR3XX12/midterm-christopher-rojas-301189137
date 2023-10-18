@@ -1,0 +1,13 @@
+/* AddProduct.css */
+.label {
+    font-weight: bold;
+  }
+  
+  .input {
+    width: 100%;
+  }
+  
+  .error-message {
+    color: red;
+  }
+  
