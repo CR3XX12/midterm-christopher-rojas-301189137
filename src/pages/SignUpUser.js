@@ -90,7 +90,7 @@ function SignUpUser() {
           {errors.confirmPassword && <p className="error-message">{errors.confirmPassword.message}</p>}
         </div>
         <div>
-          <button type="submit">Sign Up</button>
+          <button type="submit" class="btn btn-outline-success">Sign Up</button>
         </div>
       </form>
     </div>

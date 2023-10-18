@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './AddProduct.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function AddProduct() {
   const [productData, setProductData] = useState({
@@ -71,8 +72,8 @@ function AddProduct() {
           />
         </div>
         <div>
-          <button type="submit">Submit</button>
-          <button type="button" onClick={() => setProductData({
+          <button type="submit" class="btn btn-outline-success">Submit</button>
+          <button type="button" class="btn btn-outline-danger"onClick={() => setProductData({
             name: '',
             description: '',
             categories: '',

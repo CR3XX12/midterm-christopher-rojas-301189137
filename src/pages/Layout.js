@@ -1,8 +1,11 @@
 import { Outlet, Link } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 const Layout = () => {
 return (
 <>
-<nav>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    
 <ul>
 <li>
 <Link to="/">Home</Link>
@@ -23,6 +26,10 @@ return (
 </nav>
 <Outlet />
 </>
+
+
 )
 };
+
+
 export default Layout;
